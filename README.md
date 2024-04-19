@@ -20,7 +20,7 @@ This application allows users to create and customize digital profiles. Users ca
 </p>
 
 ## Installation and Setup
-1. Clone the repository to your local machine using the command: `git clone https://github.com/yourusername/CardMaker.git`
+1. Clone the repository to your local machine using the command: `git clone https://github.com/rohanvron/CardMaker.git`
 2. Navigate to the project directory: `cd CardMaker`
 3. Install the necessary dependencies using npm or yarn: `npm install` or `yarn install`
 
@@ -33,7 +33,7 @@ The project uses the following dependencies:
 
 Install dependencies: Run the following command to install all the dependencies
 
-npm install react-dom react-icons dom-to-image
+Run: npm install react-dom react-icons dom-to-image
 
 Install Vite globally if you haven't already: `npm install -g create-vite@latest` or `yarn create vite@latest`
 
