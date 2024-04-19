@@ -1,0 +1,165 @@
+.form {
+    display: flex;
+    align-items: center;
+}
+
+.formContainer {
+    background: linear-gradient(to right, #67f1df38, #90edf070);
+    border: 2px solid hsla(0, 0%, 0%, 0.267);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 25%;
+    max-width: 250px;
+}
+
+/*changing border radius using useEffect*/
+
+:root {
+    --border-color: black;
+    --border-radius: 8px;
+    --border-size: 1px;
+}
+
+.formCard {
+    margin-left: 0;
+    border: var(--border-size) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    background-size: cover;
+    background-image: url(${bgImg});
+    overflow: auto;
+}
+
+.formCard #profile {
+    aspect-ratio: 1 / 1;
+    object-position: center top;
+    object-fit: cover;
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #00000010;
+    border-radius: 50%;
+    padding-bottom: 0px;
+    box-shadow: 0 0 5px #00000010;
+}
+
+.img {
+    text-align: center;
+}
+
+/* styling form container */
+
+.formContainer label {
+    color: #333;
+  }
+  
+  /* input and textarea*/
+  .formContainer input[type="text"],
+  .formContainer input[type="email"],
+  .formContainer input[type="name"],
+  .formContainer input[type="date"],
+  .formContainer textarea {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+  }
+  
+  /* placeholder text */
+  .formContainer input[type="text"]::placeholder,
+  .formContainer input[type="email"]::placeholder,
+  .formContainer input[type="name"]::placeholder,
+  .formContainer textarea::placeholder {
+    color: #999;
+  }
+
+  /* drop down menu */
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  select:focus {
+    border-color: #888;
+  }
+
+  /* font-icon-border controls */
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+  }
+  
+  .controls div {
+    margin-right: 10px;
+  }
+  
+  .controls label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 40px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  input[type="color"] {
+    width: 40px;
+    height: 22px;
+    margin-right: 5px;
+  }
+
+  /* export buttont */
+  button {
+    background-color: #17ecd0;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid hsla(0, 0%, 0%, 0.062);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #007c6c;
+    color: white;
+  }
+
+  /* default choose file button */
+
+  input[type="file"]::file-selector-button {
+    border: 2px solid hsla(0, 0%, 0%, 0.062);
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #17ecd0;
+    transition: 1s;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #007c6c;
+    color: white;
+  }
+
+  /* for smaller screen */
+
+  @media (max-width: 768px) {
+    .formContainer, .formCard {
+      max-width: 100%;
+    }
+    .form {
+      flex-direction: column;
+    }
+    .formContainer {
+      margin: 10px auto;
+    }
+  }
