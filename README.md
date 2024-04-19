@@ -3,7 +3,7 @@
 CardMaker is a Vite + React application designed to provide users with a platform to create and customize digital profiles. The application offers a wide array of customization options, allowing users to personalize their profiles to their liking.
 
 <p align="center">
-  <img  src="./src/assets/ui.PNG>
+  <img  src="https://github.com/rohanvron/CardMaker/blob/main/src/assets/ui.PNG?raw=true">
 </p>
 
 ## Description 
@@ -16,7 +16,7 @@ This application allows users to create and customize digital profiles. Users ca
 - **Export Functionality**: Users can export their customized profile as a high-quality PNG image.
 
 <p align="center">
-  <img width="250" height="400" src="./src/assets/Card.png">
+  <img width="250" height="400" src="https://github.com/rohanvron/CardMaker/blob/main/src/assets/Card.png?raw=true">
 </p>
 
 ## Installation and Setup
